@@ -110,11 +110,11 @@ The following attributes are exported:
 
 * `tenant_id` - The Tenant ID for the Service Principal associated with the Identity of this SQL Server.
 
--> You can access the Principal ID via `${azurerm_sql_server.example.identity.0.principal_id}` and the Tenant ID via `${azurerm_sql_server.example.identity.0.tenant_id}`
+-> You can access the Principal ID via `${azurerm_mssql_server.example.identity.0.principal_id}` and the Tenant ID via `${azurerm_mssql_server.example.identity.0.tenant_id}`
 
 ---
 
-A `azuread_administrator` block supports the following:
+An `azuread_administrator` block supports the following:
 
 * `login_username` - (Required)  The login username of the Azure AD Administrator of this SQL Server.
 
@@ -124,7 +124,7 @@ A `azuread_administrator` block supports the following:
 
 ---
 
-A `extended_auditing_policy` block supports the following:
+An `extended_auditing_policy` block supports the following:
 
 * `storage_account_access_key` - (Required)  Specifies the access key to use for the auditing storage account.
 
