@@ -97,7 +97,7 @@ func resourceArmFrontDoor() *schema.Resource {
 
 			"routing_rule": {
 				Type:     schema.TypeList,
-				MaxItems: 100,
+				MaxItems: 1000,
 				Required: true,
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
